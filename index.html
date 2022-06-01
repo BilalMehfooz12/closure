@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+<script>
+  //jhn par nested function a jai means outerfunc and innerfunc to os ko closure khthy hy or innerfunc outerfunc ki values lo access kar sakh 
+  //tha but outerfunc innerfun ki koi bhi cheaz ko access nhi kar saktha orinnerfunction global values ko bhi access kar saktha hy
+ function outerfunction()
+ {
+   var a = "Outer Function"
+   document.write(a,"<br>")
+   function innerfunction()
+   {
+     var b = "Innner function"
+     document.write(b,"<br>")
+     document.write(a)
+   }
+   innerfunction()
+ }
+ outerfunction()
+</script>
